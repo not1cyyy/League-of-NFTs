@@ -10,13 +10,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 700px;
+  width: 500px;
 }
 .card{
   margin: 8px;
   border-radius: 8px;
-  width: 150px;
-  height: 150px;
+  
 }
 #bg{
   position: absolute;
