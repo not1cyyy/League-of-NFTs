@@ -1,7 +1,7 @@
 <br/>
 <p align="center">
     <a href="https://github.com/not1cyyy/league-of-nfts" target="_blank">
-        <img width="50%" src="https://github.com/not1cyyy/league-of-nfts/assets/101048320/829d076b-b405-4948-90b4-e8bcdfd48bf9" alt="Sulu logo">
+        <img width="50%" src="https://github.com/not1cyyy/league-of-nfts/blob/main/src/thumbnail.png" alt="League of NFTs logo">
       
   </a>
 </p>
@@ -12,13 +12,13 @@
         <img src="https://img.shields.io/badge/Licence-GPL3-green" alt="GitHub license">
     </a>
     <a href="https://github.com/not1cyyy/league-of-nfts/releases" target="_blank">
-        <img src="https://img.shields.io/github/release-date/not1cyyy/league-of-nfts" alt="GitHub release">
+        <img src="https://img.shields.io/badge/Release-0.1.0-purple" alt="GitHub release">
     </a>
     <a href="https://github.com/not1cyyy/league-of-nfts/commits" target="_blank">
-        <img src="https://img.shields.io/github/commit-activity/y/not1cyyy/league-of-nfts" alt="GitHub commit activity">
+        <img src="https://img.shields.io/badge/ME COOL-YES-blue" alt="Cool">
     </a>
     <a href="https://github.com/not1cyyy/league-of-nfts/graphs/contributors" target="_blank">
-        <img src="https://img.shields.io/github/contributors-anon/not1cyyy/league-of-nfts" alt="GitHub contributors">
+        <img src="https://img.shields.io/badge/Author-not1cyyy-pink" alt="Author">
     </a>
 </p>
 <br/>
