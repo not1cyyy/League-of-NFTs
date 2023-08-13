@@ -65,7 +65,9 @@ I want League of NFTs to be a **community-driven open source project** backed by
 
 ## 📫&nbsp; Have a question? Want to chat? Ran into a problem?
 
-I'm happy to answer your questions via [GitHub Discussions](https://github.com/not1cyyy/league-of-nfts/discussions)! Obviously you can always **reach out to me directly** via any of my linked social media.
+I'm happy to answer your questions via [GitHub Discussions](https://github.com/not1cyyy/league-of-nfts/discussions) ! 
+
+Obviously you can always **reach out to me directly** via any of my linked social media.
 
 
 ## 🤝&nbsp; Found a bug? Missing a specific feature?
