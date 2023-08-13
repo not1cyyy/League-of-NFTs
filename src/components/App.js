@@ -4,6 +4,7 @@ import './App.css';
 import MemoryToken from '../abis/MemoryToken.json'
 import thumbnail from '../thumbnail.png'
 
+
 const CARD_ARRAY = [
   // { name: "yasuo", img: "/images/yasuo.jpg" },
   { name: "ahri", img: "/images/ahri.jpg" },
@@ -143,6 +144,7 @@ class App extends Component {
 
   render() {
     return (
+
       <div>
         <nav className="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
           <a
@@ -160,17 +162,18 @@ class App extends Component {
             </li>
           </ul>
         </nav>
-        <div className="container-fluid mt-5">
+        <div className="container-fluid mt-5" id="container">
           <div className="row">
             <main role="main" className="col-lg-12 d-flex text-center">
               <div className="content mr-auto ml-auto">
                 <h1 className="d-4">Start the hunt !</h1>
 
-                <div className="grid mb-4" >
+                <div className="grid mb-4" id="grid" >
 
                   {this.state.cardArray.map((card, key) => {
                     return (
                       <img
+                        className="card"
                         key={key}
                         src={this.chooseImage(key)}
                         data-id={key}
@@ -211,7 +214,9 @@ class App extends Component {
             </main>
           </div>
         </div>
+        <img src="/images/bg.svg" id="bg" />
       </div>
+
     );
   }
 }
