@@ -4,15 +4,32 @@
   height: 150px;
   width: 150px;
   border-radius: 50%;
-  display: inline-block;
 }
+#title{
+  margin-top: 30px;
+}
+#grid2,
 #grid{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 500px;
+  width: 600px;
+  z-index: 10;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 20px;
+  margin-left: auto; margin-right: auto;
+
 }
+#grid2{
+  width: 700px;
+}
+
+ 
 .card{
+  z-index: 10;
+
   margin: 8px;
   border-radius: 8px;
   
@@ -27,14 +44,4 @@
 }
 body{
   background-color: #ECECEC;
-}
-
-#container{
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  z-index: 10;
-
 }
