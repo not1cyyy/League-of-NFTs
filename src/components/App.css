@@ -6,3 +6,36 @@
   border-radius: 50%;
   display: inline-block;
 }
+#grid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+}
+.card{
+  margin: 8px;
+  border-radius: 8px;
+  width: 150px;
+  height: 150px;
+}
+#bg{
+  position: absolute;
+  bottom: 0; right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 5%;
+  z-index: 0;
+}
+body{
+  background-color: #ECECEC;
+}
+
+#container{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 10;
+
+}
