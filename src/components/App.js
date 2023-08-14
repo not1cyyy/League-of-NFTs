@@ -3,6 +3,9 @@ import Web3 from 'web3'
 import './App.css';
 import MemoryToken from '../abis/MemoryToken.json'
 import thumbnail from '../thumbnail.png'
+import theme from "../audio/sg_theme.mp3"
+import {BsFillVolumeUpFill,BsFillVolumeMuteFill} from "react-icons/bs"
+import { useState } from "react";
 
 
 const CARD_ARRAY = [
@@ -23,7 +26,7 @@ const CARD_ARRAY = [
 ]
 
 class App extends Component {
-
+  
   async componentWillMount() {
     await this.LoadWeb3()
     await this.LoadBlockchainData()
@@ -139,10 +142,21 @@ class App extends Component {
       cardsChosen: [],   // Array of cards chosen
       cardsChosenId: [], // Array of cards chosen ID
       cardsWon: [],      // Array of cards won
+      isMuted: false,    // Mute music bool 
+
     }
+    
   }
+  toggleMute = () => {
+    this.setState((prevState) => ({
+      isMuted: !prevState.isMuted,
+    }));
+  };
+ 
 
   render() {
+
+    const { isMuted } = this.state;
     return (
 
       <div>
@@ -191,7 +205,7 @@ class App extends Component {
 
                 <div>
 
-                  <h5 classNamemt="txt mt-5">Tokens Collected:<span id="result">&nbsp;{this.state.tokenURIs.length}</span></h5>
+                  <h5 classNamemt="txt mt-5" id="txt">Tokens Collected:<span id="result">&nbsp;{this.state.tokenURIs.length}</span></h5>
 
 
                   <div className="grid mt-5" id="grid2" >
@@ -216,7 +230,19 @@ class App extends Component {
           </div>
         </div>
         <img src="/images/bg.svg" id="bg" />
-      </div>
+        <audio autoPlay loop  muted={isMuted}>
+  <source src={theme} type="audio/mpeg"  />
+
+
+</audio>    
+
+
+    <button className="Mute"  title="Mute/Play Music" onClick={this.toggleMute}>
+      {isMuted ?  <BsFillVolumeMuteFill/>:<BsFillVolumeUpFill/>}
+      </button>
+  </div>
+
+
 
     );
   }

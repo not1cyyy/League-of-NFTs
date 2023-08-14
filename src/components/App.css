@@ -1,5 +1,8 @@
 /* Styles go here */
-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+*{
+  font-family: 'Ubuntu Mono', monospace;
+}
 .token {
   height: 150px;
   width: 150px;
@@ -26,7 +29,14 @@
   width: 700px;
 }
 
- 
+#title{
+  font-weight: 700;
+  
+}
+
+#txt{
+  font-weight: bolder;
+}
 .card{
   z-index: 10;
 
@@ -45,3 +55,19 @@
 body{
   background-color: #ECECEC;
 }
+
+.Mute{
+
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #35155D;
+  color: white;
+  font-size: 2rem;
+  padding-bottom: 6.5px;
+  border: 0;
+  cursor: pointer;
+};
