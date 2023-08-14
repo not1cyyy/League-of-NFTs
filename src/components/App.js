@@ -166,9 +166,9 @@ class App extends Component {
           <div className="row">
             <main role="main" className="col-lg-12 d-flex text-center">
               <div className="content mr-auto ml-auto">
-                <h1 className="d-4">Start the hunt !</h1>
+                <h1 className="d-4" id="title">Start the hunt !</h1>
 
-                <div className="grid mb-4" id="grid" >
+                <div className="grid mt-5" id="grid" >
 
                   {this.state.cardArray.map((card, key) => {
                     return (
@@ -191,10 +191,10 @@ class App extends Component {
 
                 <div>
 
-                  <h5>Tokens Collected:<span id="result">&nbsp;{this.state.tokenURIs.length}</span></h5>
+                  <h5 classNamemt="txt mt-5">Tokens Collected:<span id="result">&nbsp;{this.state.tokenURIs.length}</span></h5>
 
 
-                  <div className="grid mb-4" id="grid" >
+                  <div className="grid mt-5" id="grid2" >
 
                     {this.state.tokenURIs.map((tokenURI, key) => {
                       return (
